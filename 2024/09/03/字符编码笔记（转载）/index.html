@@ -13,23 +13,24 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2024/09/02/关于哈夫曼编码/"/>
+    <link rel="canonical" href="http://example.com/2024/09/03/字符编码笔记（转载）/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="起因其实是几个月前的事，当时在看深入浅出程序设计竞赛，发现了有哈夫曼编码这个例子，并没怎么注意，但是神奇的是在之后又在youtube里看到了哈夫曼编码，于是就从网上收集了部分信息。 哈夫曼（Huffman）编码哈夫曼编码是一种非常有效的数据压缩算法，它通过使用可变长度的编码来达到无损压缩数据的目的。哈夫曼编码是依据字符出现概率来构建最优二叉树，从而生成最短的平均长度码字的编码方法。在实际应用中，哈">
+        <meta name="description" content="字符编码笔记转自https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2007&#x2F;10&#x2F;ascii_unicode_and_utf-8.html 作者：阮一峰内容一、ASCII 码 我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于哈夫曼编码">
-<meta property="og:url" content="http://example.com/2024/09/02/%E5%85%B3%E4%BA%8E%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81/index.html">
+<meta property="og:title" content="字符编码笔记（转载）">
+<meta property="og:url" content="http://example.com/2024/09/03/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E7%AC%94%E8%AE%B0%EF%BC%88%E8%BD%AC%E8%BD%BD%EF%BC%89/index.html">
 <meta property="og:site_name" content="a hexo blog">
-<meta property="og:description" content="起因其实是几个月前的事，当时在看深入浅出程序设计竞赛，发现了有哈夫曼编码这个例子，并没怎么注意，但是神奇的是在之后又在youtube里看到了哈夫曼编码，于是就从网上收集了部分信息。 哈夫曼（Huffman）编码哈夫曼编码是一种非常有效的数据压缩算法，它通过使用可变长度的编码来达到无损压缩数据的目的。哈夫曼编码是依据字符出现概率来构建最优二叉树，从而生成最短的平均长度码字的编码方法。在实际应用中，哈">
+<meta property="og:description" content="字符编码笔记转自https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2007&#x2F;10&#x2F;ascii_unicode_and_utf-8.html 作者：阮一峰内容一、ASCII 码 我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-09-02T09:55:40.000Z">
-<meta property="article:modified_time" content="2024-09-03T09:04:17.147Z">
+<meta property="og:image" content="http://example.com/source/images/example.png">
+<meta property="article:published_time" content="2024-09-03T09:04:09.000Z">
+<meta property="article:modified_time" content="2024-09-03T09:40:30.305Z">
 <meta property="article:author" content="knownothing">
-<meta property="article:tag" content="计算机杂谈">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/source/images/example.png">
     
     
     <!--- Icon Part-->
@@ -41,7 +42,7 @@
     
     <title>
         
-            关于哈夫曼编码 -
+            字符编码笔记（转载） -
         
         🤓🤓摆烂blog🤓🤓
     </title>
@@ -391,7 +392,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">关于哈夫曼编码</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">字符编码笔记（转载）</h1>
                 </div>
             
             </div>
@@ -412,31 +413,20 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-09-02 17:55:40</span>
-        <span class="mobile">2024-09-02 17:55:40</span>
+        <span class="desktop">2024-09-03 17:04:09</span>
+        <span class="mobile">2024-09-03 17:04:09</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-09-03 17:04:17</span>
-            <span class="mobile">2024-09-03 17:04:17</span>
+            <span class="desktop">2024-09-03 17:40:30</span>
+            <span class="mobile">2024-09-03 17:40:30</span>
             <span class="hover-info">更新</span>
         </span>
     
 
     
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9D%82%E8%B0%88/">计算机杂谈</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
     
 
     
@@ -458,34 +448,89 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h6 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h6><p>其实是几个月前的事，当时在看深入浅出程序设计竞赛，发现了有哈夫曼编码这个例子，并没怎么注意，但是神奇的是在之后又在youtube里看到了哈夫曼编码，于是就从网上收集了部分信息。</p>
-<h1 id="哈夫曼（Huffman）编码"><a href="#哈夫曼（Huffman）编码" class="headerlink" title="哈夫曼（Huffman）编码"></a>哈夫曼（Huffman）编码</h1><p>哈夫曼编码是一种非常有效的数据压缩算法，它通过使用可变长度的编码来达到无损压缩数据的目的。哈夫曼编码是依据字符出现概率来构建最优二叉树，从而生成最短的平均长度码字的编码方法。在实际应用中，哈夫曼编码被广泛应用于数据压缩领域，尤其是在文件压缩、图像压缩和视频压缩等方面。</p>
-<p>定义：给定n个权值作为n个叶子结点，构造一棵二叉树，若树的带权路径长度达到最小，则这棵树被称为哈夫曼树。</p>
-<h2 id="哈夫曼编码的两个特殊性质："><a href="#哈夫曼编码的两个特殊性质：" class="headerlink" title="哈夫曼编码的两个特殊性质："></a>哈夫曼编码的两个特殊性质：</h2><p>1、哈夫曼编码是前缀编码。</p>
-<p>（问：什么是前缀编码？ 前缀编码就是在一个编码方案中，任何一个编码度不是其他任何编码的前缀（最左子串），那么这个编码就是前缀编码。可以保证在解码时不会产生二义性）</p>
-<p>2、哈夫曼编码是最优前缀编码。即对于包括n个字符的数据文件，分别以它们的出现次数为权值来构造哈夫曼树，则利用该树对应的哈夫曼编码对文件进行编码，能使该文件压缩后对应的二进制文件的长度最短。（同时，所以它也是不定长编码）</p>
-<h3 id="一、哈夫曼编码的原理"><a href="#一、哈夫曼编码的原理" class="headerlink" title="一、哈夫曼编码的原理"></a>一、哈夫曼编码的原理</h3><p>哈夫曼编码的基本原理是利用字符出现概率的不同，对字符进行不等长的编码，从而减少总体编码长度。具体来说，哈夫曼编码通过构建最优二叉树（也称为哈夫曼树）来实现这一目标。最优二叉树是一种带权路径长度最小的二叉树，其中权值表示字符出现的概率。在构建最优二叉树的过程中，出现概率较高的字符赋予较短的编码，出现概率较低的字符赋予较长的编码，从而达到平均长度最短的目的。</p>
-<h3 id="二、哈夫曼编码的算法实现"><a href="#二、哈夫曼编码的算法实现" class="headerlink" title="二、哈夫曼编码的算法实现"></a>二、哈夫曼编码的算法实现</h3><p>哈夫曼编码算法的实现包括以下几个步骤：</p>
-<h5 id="1-统计源数据中各个字符出现的概率。"><a href="#1-统计源数据中各个字符出现的概率。" class="headerlink" title="1 统计源数据中各个字符出现的概率。"></a>1 统计源数据中各个字符出现的概率。</h5><h5 id="2-根据字符概率构造哈夫曼树。这一步骤包括两个子步骤：首先是按照字符概率大小构造初始的二叉树，然后是进行合并操作，直到只剩下一个根节点。"><a href="#2-根据字符概率构造哈夫曼树。这一步骤包括两个子步骤：首先是按照字符概率大小构造初始的二叉树，然后是进行合并操作，直到只剩下一个根节点。" class="headerlink" title="2 根据字符概率构造哈夫曼树。这一步骤包括两个子步骤：首先是按照字符概率大小构造初始的二叉树，然后是进行合并操作，直到只剩下一个根节点。"></a>2 根据字符概率构造哈夫曼树。这一步骤包括两个子步骤：首先是按照字符概率大小构造初始的二叉树，然后是进行合并操作，直到只剩下一个根节点。</h5><h5 id="3-根据哈夫曼树生成编码表。这一步骤是将哈夫曼树的每个节点与其对应的字符进行关联，从而生成编码表。"><a href="#3-根据哈夫曼树生成编码表。这一步骤是将哈夫曼树的每个节点与其对应的字符进行关联，从而生成编码表。" class="headerlink" title="3 根据哈夫曼树生成编码表。这一步骤是将哈夫曼树的每个节点与其对应的字符进行关联，从而生成编码表。"></a>3 根据哈夫曼树生成编码表。这一步骤是将哈夫曼树的每个节点与其对应的字符进行关联，从而生成编码表。</h5><h5 id="4-对源数据进行哈夫曼编码。根据生成的编码表对源数据进行编码，得到哈夫曼编码后的数据。"><a href="#4-对源数据进行哈夫曼编码。根据生成的编码表对源数据进行编码，得到哈夫曼编码后的数据。" class="headerlink" title="4 对源数据进行哈夫曼编码。根据生成的编码表对源数据进行编码，得到哈夫曼编码后的数据。"></a>4 对源数据进行哈夫曼编码。根据生成的编码表对源数据进行编码，得到哈夫曼编码后的数据。</h5><h3 id="三、具体代码实现"><a href="#三、具体代码实现" class="headerlink" title="三、具体代码实现"></a>三、具体代码实现</h3><h5 id="先定义一"><a href="#先定义一" class="headerlink" title="先定义一"></a>先定义一</h5><h3 id="四、哈夫曼编码的应用与实践"><a href="#四、哈夫曼编码的应用与实践" class="headerlink" title="四、哈夫曼编码的应用与实践"></a>四、哈夫曼编码的应用与实践</h3><p>哈夫曼编码在实际应用中具有广泛的应用场景，例如文件压缩、图像压缩和视频压缩等。以下是几个具体的实践例子：<br>文件压缩：在文件压缩领域，哈夫曼编码被广泛应用于各种压缩软件中。通过对文件中的字符进行哈夫曼编码，可以显著减小文件体积，从而实现无损压缩。<br>图像压缩：在图像压缩领域，哈夫曼编码也被广泛应用。通过对图像中的像素信息进行哈夫曼编码，可以有效地减小图像文件大小，从而实现图像的无损压缩。<br>视频压缩：在视频压缩领域，哈夫曼编码同样发挥了重要作用。通过对视频中的音频和视频数据进行哈夫曼编码，可以显著减小视频文件大小，从而方便视频的存储和传输。</p>
-<h1 id="由网络信息整理而来"><a href="#由网络信息整理而来" class="headerlink" title="由网络信息整理而来"></a>由网络信息整理而来</h1>
+            <h1 id="字符编码笔记"><a href="#字符编码笔记" class="headerlink" title="字符编码笔记"></a>字符编码笔记</h1><h3 id="转自https-www-ruanyifeng-com-blog-2007-10-ascii-unicode-and-utf-8-html"><a href="#转自https-www-ruanyifeng-com-blog-2007-10-ascii-unicode-and-utf-8-html" class="headerlink" title="转自https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html"></a>转自<a class="link"   target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" >https://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h3><h2 id="作者：阮一峰"><a href="#作者：阮一峰" class="headerlink" title="作者：阮一峰"></a>作者：阮一峰</h2><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>一、ASCII 码</p>
+<p>我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从00000000到11111111。</p>
+<p>上个世纪60年代，美国制定了一套字符编码，对英语字符与二进制位之间的关系，做了统一规定。这被称为 ASCII 码，一直沿用至今。</p>
+<p>ASCII 码一共规定了128个字符的编码，比如空格SPACE是32（二进制00100000），大写的字母A是65（二进制01000001）。这128个符号（包括32个不能打印出来的控制符号），只占用了一个字节的后面7位，最前面的一位统一规定为0。<br>二、非 ASCII 编码</p>
+<p>英语用128个符号编码就够了，但是用来表示其他语言，128个符号是不够的。比如，在法语中，字母上方有注音符号，它就无法用 ASCII 码表示。于是，一些欧洲国家就决定，利用字节中闲置的最高位编入新的符号。比如，法语中的é的编码为130（二进制10000010）。这样一来，这些欧洲国家使用的编码体系，可以表示最多256个符号。</p>
+<p>但是，这里又出现了新的问题。不同的国家有不同的字母，因此，哪怕它们都使用256个符号的编码方式，代表的字母却不一样。比如，130在法语编码中代表了é，在希伯来语编码中却代表了字母Gimel (ג)，在俄语编码中又会代表另一个符号。但是不管怎样，所有这些编码方式中，0–127表示的符号是一样的，不一样的只是128–255的这一段。</p>
+<p>至于亚洲国家的文字，使用的符号就更多了，汉字就多达10万左右。一个字节只能表示256种符号，肯定是不够的，就必须使用多个字节表达一个符号。比如，简体中文常见的编码方式是 GB2312，使用两个字节表示一个汉字，所以理论上最多可以表示 256 x 256 &#x3D; 65536 个符号。</p>
+<p>中文编码的问题需要专文讨论，这篇笔记不涉及。这里只指出，虽然都是用多个字节表示一个符号，但是GB类的汉字编码与后文的 Unicode 和 UTF-8 是毫无关系的。<br>三. Unicode</p>
+<p>正如上一节所说，世界上存在着多种编码方式，同一个二进制数字可以被解释成不同的符号。因此，要想打开一个文本文件，就必须知道它的编码方式，否则用错误的编码方式解读，就会出现乱码。为什么电子邮件常常出现乱码？就是因为发信人和收信人使用的编码方式不一样。</p>
+<p>可以想象，如果有一种编码，将世界上所有的符号都纳入其中。每一个符号都给予一个独一无二的编码，那么乱码问题就会消失。这就是 Unicode，就像它的名字都表示的，这是一种所有符号的编码。</p>
+<p>Unicode 当然是一个很大的集合，现在的规模可以容纳100多万个符号。每个符号的编码都不一样，比如，U+0639表示阿拉伯字母Ain，U+0041表示英语的大写字母A，U+4E25表示汉字严。具体的符号对应表，可以查询unicode.org，或者专门的汉字对应表。<br>四、Unicode 的问题</p>
+<p>需要注意的是，Unicode 只是一个符号集，它只规定了符号的二进制代码，却没有规定这个二进制代码应该如何存储。</p>
+<p>比如，汉字严的 Unicode 是十六进制数4E25，转换成二进制数足足有15位（100111000100101），也就是说，这个符号的表示至少需要2个字节。表示其他更大的符号，可能需要3个字节或者4个字节，甚至更多。</p>
+<p>这里就有两个严重的问题，第一个问题是，如何才能区别 Unicode 和 ASCII ？计算机怎么知道三个字节表示一个符号，而不是分别表示三个符号呢？第二个问题是，我们已经知道，英文字母只用一个字节表示就够了，如果 Unicode 统一规定，每个符号用三个或四个字节表示，那么每个英文字母前都必然有二到三个字节是0，这对于存储来说是极大的浪费，文本文件的大小会因此大出二三倍，这是无法接受的。</p>
+<p>它们造成的结果是：1）出现了 Unicode 的多种存储方式，也就是说有许多种不同的二进制格式，可以用来表示 Unicode。2）Unicode 在很长一段时间内无法推广，直到互联网的出现。<br>五、UTF-8</p>
+<p>互联网的普及，强烈要求出现一种统一的编码方式。UTF-8 就是在互联网上使用最广的一种 Unicode 的实现方式。其他实现方式还包括 UTF-16（字符用两个字节或四个字节表示）和 UTF-32（字符用四个字节表示），不过在互联网上基本不用。重复一遍，这里的关系是，UTF-8 是 Unicode 的实现方式之一。</p>
+<p>UTF-8 最大的一个特点，就是它是一种变长的编码方式。它可以使用1~4个字节表示一个符号，根据不同的符号而变化字节长度。</p>
+<p>UTF-8 的编码规则很简单，只有二条：</p>
+<p>1）对于单字节的符号，字节的第一位设为0，后面7位为这个符号的 Unicode 码。因此对于英语字母，UTF-8 编码和 ASCII 码是相同的。</p>
+<p>2）对于n字节的符号（n &gt; 1），第一个字节的前n位都设为1，第n + 1位设为0，后面字节的前两位一律设为10。剩下的没有提及的二进制位，全部为这个符号的 Unicode 码。</p>
+<p>下表总结了编码规则，字母x表示可用编码的位。</p>
+<pre><code>Unicode符号范围     |        UTF-8编码方式
+(十六进制)        |              （二进制）
+----------------------+---------------------------------------------
+0000 0000-0000 007F | 0xxxxxxx
+0000 0080-0000 07FF | 110xxxxx 10xxxxxx
+0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx
+0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+</code></pre>
+<p>跟据上表，解读 UTF-8 编码非常简单。如果一个字节的第一位是0，则这个字节单独就是一个字符；如果第一位是1，则连续有多少个1，就表示当前字符占用多少个字节。</p>
+<p>下面，还是以汉字严为例，演示如何实现 UTF-8 编码。</p>
+<p>严的 Unicode 是4E25（100111000100101），根据上表，可以发现4E25处在第三行的范围内（0000 0800 - 0000 FFFF），因此严的 UTF-8 编码需要三个字节，即格式是1110xxxx 10xxxxxx 10xxxxxx。然后，从严的最后一个二进制位开始，依次从后向前填入格式中的x，多出的位补0。这样就得到了，严的 UTF-8 编码是11100100 10111000 10100101，转换成十六进制就是E4B8A5。<br>六、Unicode 与 UTF-8 之间的转换</p>
+<p>通过上一节的例子，可以看到严的 Unicode码 是4E25，UTF-8 编码是E4B8A5，两者是不一样的。它们之间的转换可以通过程序实现。</p>
+<p>Windows平台，有一个最简单的转化方法，就是使用内置的记事本小程序notepad.exe。打开文件后，点击文件菜单中的另存为命令，会跳出一个对话框，在最底部有一个编码的下拉条。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/source/images/example.png"
+                      alt="例子"
+                ></p>
+<p>里面有四个选项：ANSI，Unicode，Unicode big endian和UTF-8。</p>
+<p>1）ANSI是默认的编码方式。对于英文文件是ASCII编码，对于简体中文文件是GB2312编码（只针对 Windows 简体中文版，如果是繁体中文版会采用 Big5 码）。</p>
+<p>2）Unicode编码这里指的是notepad.exe使用的 UCS-2 编码方式，即直接用两个字节存入字符的 Unicode 码，这个选项用的 little endian 格式。</p>
+<p>3）Unicode big endian编码与上一个选项相对应。我在下一节会解释 little endian 和 big endian 的涵义。</p>
+<p>4）UTF-8编码，也就是上一节谈到的编码方法。</p>
+<p>选择完”编码方式”后，点击”保存”按钮，文件的编码方式就立刻转换好了。<br>七、Little endian 和 Big endian</p>
+<p>上一节已经提到，UCS-2 格式可以存储 Unicode 码（码点不超过0xFFFF）。以汉字严为例，Unicode 码是4E25，需要用两个字节存储，一个字节是4E，另一个字节是25。存储的时候，4E在前，25在后，这就是 Big endian 方式；25在前，4E在后，这是 Little endian 方式。</p>
+<p>这两个古怪的名称来自英国作家斯威夫特的《格列佛游记》。在该书中，小人国里爆发了内战，战争起因是人们争论，吃鸡蛋时究竟是从大头(Big-endian)敲开还是从小头(Little-endian)敲开。为了这件事情，前后爆发了六次战争，一个皇帝送了命，另一个皇帝丢了王位。</p>
+<p>第一个字节在前，就是”大头方式”（Big endian），第二个字节在前就是”小头方式”（Little endian）。</p>
+<p>那么很自然的，就会出现一个问题：计算机怎么知道某一个文件到底采用哪一种方式编码？</p>
+<p><em>Unicode 规范定义，每一个文件的最前面分别加入一个表示编码顺序的字符，这个字符的名字叫做”零宽度非换行空格”（zero width no-break space），用FEFF表示。这正好是两个字节，而且FF比FE大1。</em></p>
+<p>如果一个文本文件的头两个字节是FE FF，就表示该文件采用大头方式；如果头两个字节是FF FE，就表示该文件采用小头方式。<br>八、实例</p>
+<p>下面，举一个实例。</p>
+<p>打开”记事本”程序notepad.exe，新建一个文本文件，内容就是一个严字，依次采用ANSI，Unicode，Unicode big endian和UTF-8编码方式保存。</p>
+<p>然后，用文本编辑软件UltraEdit 中的”十六进制功能”，观察该文件的内部编码方式。</p>
+<p>1）ANSI：文件的编码就是两个字节D1 CF，这正是严的 GB2312 编码，这也暗示 GB2312 是采用大头方式存储的。</p>
+<p>2）Unicode：编码是四个字节FF FE 25 4E，其中FF FE表明是小头方式存储，真正的编码是4E25。</p>
+<p>3）Unicode big endian：编码是四个字节FE FF 4E 25，其中FE FF表明是大头方式存储。</p>
+<p>4）UTF-8：编码是六个字节EF BB BF E4 B8 A5，前三个字节EF BB BF表示这是UTF-8编码，后三个E4B8A5就是严的具体编码，它的存储顺序与编码顺序是一致的。<br>九、延伸阅读</p>
+<pre><code>The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets（关于字符集的最基本知识）
+谈谈Unicode编码
+RFC3629：UTF-8, a transformation format of ISO 10646（如果实现UTF-8的规定）
+</code></pre>
+<p>（完）</p>
+
         </div>
 
         
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 关于哈夫曼编码</li>
+        <li><strong>标题:</strong> 字符编码笔记（转载）</li>
         <li><strong>作者:</strong> jorker404joker</li>
         <li><strong>创建于
-                :</strong> 2024-09-02 17:55:40</li>
+                :</strong> 2024-09-03 17:04:09</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-09-03 17:04:17
+                    :</strong> 2024-09-03 17:40:30
             </li>
         
         <li>
-            <strong>链接:</strong> https://redefine.ohevan.com/2024/09/02/关于哈夫曼编码/
+            <strong>链接:</strong> https://redefine.ohevan.com/2024/09/03/字符编码笔记（转载）/
         </li>
         <li>
             <strong>
@@ -504,14 +549,6 @@
         
 
         
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9D%82%E8%B0%88/">#计算机杂谈</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
 
         
 
@@ -521,18 +558,33 @@
                     <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="prev"
                         rel="prev"
-                        href="/2024/09/03/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E7%AC%94%E8%AE%B0%EF%BC%88%E8%BD%AC%E8%BD%BD%EF%BC%89/"
+                        href="/2024/09/03/%E7%BC%BA%E7%9C%81%E4%B8%80%E8%AF%8D/"
                         >
                             <span class="left arrow-icon flex justify-center items-center">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">字符编码笔记（转载）</span>
+                                <span class="post-nav-title-item">缺省一词</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
                     </div>
                 
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/09/02/%E5%85%B3%E4%BA%8E%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">关于哈夫曼编码</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
                 
             </div>
         
@@ -589,8 +641,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">关于哈夫曼编码</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%93%88%E5%A4%AB%E6%9B%BC%EF%BC%88Huffman%EF%BC%89%E7%BC%96%E7%A0%81"><span class="nav-text">哈夫曼（Huffman）编码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E7%9A%84%E4%B8%A4%E4%B8%AA%E7%89%B9%E6%AE%8A%E6%80%A7%E8%B4%A8%EF%BC%9A"><span class="nav-text">哈夫曼编码的两个特殊性质：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E7%9A%84%E5%8E%9F%E7%90%86"><span class="nav-text">一、哈夫曼编码的原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0"><span class="nav-text">二、哈夫曼编码的算法实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%85%B7%E4%BD%93%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-text">三、具体代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5"><span class="nav-text">四、哈夫曼编码的应用与实践</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%B1%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E6%95%B4%E7%90%86%E8%80%8C%E6%9D%A5"><span class="nav-text">由网络信息整理而来</span></a></li></ol>
+        <div class="page-title">字符编码笔记（转载）</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E7%AC%94%E8%AE%B0"><span class="nav-text">字符编码笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AC%E8%87%AAhttps-www-ruanyifeng-com-blog-2007-10-ascii-unicode-and-utf-8-html"><span class="nav-text">转自https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2007&#x2F;10&#x2F;ascii_unicode_and_utf-8.html </span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%9C%E8%80%85%EF%BC%9A%E9%98%AE%E4%B8%80%E5%B3%B0"><span class="nav-text">作者：阮一峰</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AE%B9"><span class="nav-text">内容</span></a></li></ol></li></ol>
 
     </div>
 </div>
