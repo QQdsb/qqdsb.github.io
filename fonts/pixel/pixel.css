@@ -1,0 +1,10 @@
+@font-face {
+    font-display: swap;
+    font-family: "pixel";
+    font-style: normal;
+    font-weight: 400;
+    src: local('fusion-pixel-10px-monospaced-zh_hans.ttf'),
+    local('fusion-pixel-10px-monospaced-zh_hans.ttf'),
+    url("pixel.ttf") format("truetype");
+  }
+  
