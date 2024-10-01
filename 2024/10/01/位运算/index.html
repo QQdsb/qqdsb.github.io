@@ -13,23 +13,25 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2024/09/30/移位运算/"/>
+    <link rel="canonical" href="http://example.com/2024/10/01/位运算/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="a simple blog">
+        <meta name="description" content="概念现代计算机中，所有数据都以二进制形式存储，即 0 和 1 两种状态。计算机对二进制数据进行的运算（如加、减、乘、除）被称为位运算，即对二进制数的每一位进行操作的运算。  例如下      35:  0010 0011     47:  0010 1111     ----------------     82:  0101 0010  类型    &amp; 	与 	    两个位都为1时，结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="移位运算">
-<meta property="og:url" content="http://example.com/2024/09/30/%E7%A7%BB%E4%BD%8D%E8%BF%90%E7%AE%97/index.html">
+<meta property="og:title" content="位运算">
+<meta property="og:url" content="http://example.com/2024/10/01/%E4%BD%8D%E8%BF%90%E7%AE%97/index.html">
 <meta property="og:site_name" content="a hexo blog">
-<meta property="og:description" content="a simple blog">
+<meta property="og:description" content="概念现代计算机中，所有数据都以二进制形式存储，即 0 和 1 两种状态。计算机对二进制数据进行的运算（如加、减、乘、除）被称为位运算，即对二进制数的每一位进行操作的运算。  例如下      35:  0010 0011     47:  0010 1111     ----------------     82:  0101 0010  类型    &amp; 	与 	    两个位都为1时，结">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-09-30T13:08:52.000Z">
-<meta property="article:modified_time" content="2024-10-01T01:02:13.775Z">
+<meta property="og:image" content="http://example.com/source/images/theoutput.png">
+<meta property="article:published_time" content="2024-10-01T03:42:14.000Z">
+<meta property="article:modified_time" content="2024-10-01T04:21:11.191Z">
 <meta property="article:author" content="knownothing">
 <meta property="article:tag" content="计算机杂谈">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/source/images/theoutput.png">
     
     
     <!--- Icon Part-->
@@ -41,7 +43,7 @@
     
     <title>
         
-            移位运算 -
+            位运算 -
         
         🤓🤓摆烂blog🤓🤓
     </title>
@@ -405,7 +407,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">移位运算</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">位运算</h1>
                 </div>
             
             </div>
@@ -426,15 +428,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-09-30 21:08:52</span>
-        <span class="mobile">2024-09-30 21:08:52</span>
+        <span class="desktop">2024-10-01 11:42:14</span>
+        <span class="mobile">2024-10-01 11:42:14</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-10-01 09:02:13</span>
-            <span class="mobile">2024-10-01 09:02:13</span>
+            <span class="desktop">2024-10-01 12:21:11</span>
+            <span class="mobile">2024-10-01 12:21:11</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -472,21 +474,87 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            
+            <h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>现代计算机中，所有数据都以二进制形式存储，即 0 和 1 两种状态。计算机对二进制数据进行的运算（如加、减、乘、除）被称为位运算，即对二进制数的每一位进行操作的运算。</p>
+<blockquote>
+<p>例如下</p>
+</blockquote>
+<pre><code>    35:  0010 0011
+    47:  0010 1111
+    ----------------
+    82:  0101 0010
+</code></pre>
+<h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><pre><code>    &amp; 	与 	    两个位都为1时，结果才为1
+    | 	或 	    两个位都为0时，结果才为0
+    ^ 	异或 	两个位相同为0，相异为1
+    ~ 	取反 	0变1，1变0
+    &lt;&lt; 	左移 	各二进位全部左移若干位，高位丢弃，低位补0
+    &gt;&gt; 	右移 	各二进位全部右移若干位，高位补0或符号位补齐
+</code></pre>
+<blockquote>
+<p>不同长度的数据进行位运算：如果两个不同长度的数据进行位运算，系统会将二者按右端对齐，然后进行位运算。</p>
+</blockquote>
+<h4 id="复合赋值位运算符"><a href="#复合赋值位运算符" class="headerlink" title="复合赋值位运算符"></a>复合赋值位运算符</h4><p>和 +&#x3D; , -&#x3D; 等运算符类似，位运算也有复合赋值运算符： &amp;&#x3D; , |&#x3D; , ^&#x3D; , &lt;&lt;&#x3D; , &gt;&gt;&#x3D; 。（取反是单目运算，所以没有。）</p>
+<ul>
+<li>a |&#x3D; b：将变量 a 的值与变量 b 的值进行按位或操作，并将结果赋值给 a。</li>
+<li>a &amp;&#x3D; b：将变量 a 的值与变量 b 的值进行按位与操作，并将结果赋值给 a。</li>
+<li>a ^&#x3D; b：将变量 a 的值与变量 b 的值进行按位异或操作，并将结果赋值给 a。</li>
+</ul>
+<h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><pre><code>    #include &lt;stdio.h&gt;
+
+    int main()
+    &#123;
+        char s = 10;
+        char b = 2;
+        printf(&quot;%d\n&quot;,s);
+        printf(&quot;%d\n&quot;, b);
+        s ^= b;
+        printf(&quot;%d\n&quot;,s);
+        printf(&quot;%d\n\a&quot;,b);
+    &#125;
+
+    输出：
+    10
+    2
+    8
+    2
+</code></pre>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/source/images/theoutput.png"
+                      alt="Pas8.png"
+                ></p>
+<blockquote>
+<p>单目运算，就是只有一个操作数的运算符，即一元运算符。（常见”++”,”–”,”!”）</p>
+</blockquote>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>在C&#x2F;C++中，位运算的操作数必须是整数类型，不能是浮点数类型。</p>
+<p>char、short、int、long、unsigned char、unsigned short、unsigned int、unsigned long都可以进行移位操作，而double、float、bool、long double则不可以进行移位操作。</p>
+<h3 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h3><ol>
+<li>按位取反（~）优先级最高。</li>
+<li>左移（&lt;&lt;）和右移（&gt;&gt;）优先级次之。</li>
+<li>按位与（&amp;）。</li>
+<li>按位异或（^）。</li>
+<li>按位或（|）优先级最低。</li>
+</ol>
+<p>位运算的优先级总体上低于算术运算、关系运算、逻辑运算等</p>
+<blockquote>
+<p>在实际使用中如果对优先级不确定，可以使用括号来明确运算顺序，以避免产生错误的结果。</p>
+</blockquote>
+
         </div>
 
         
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 移位运算</li>
+        <li><strong>标题:</strong> 位运算</li>
         <li><strong>作者:</strong> jorker404joker</li>
         <li><strong>创建于
-                :</strong> 2024-09-30 21:08:52</li>
+                :</strong> 2024-10-01 11:42:14</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-10-01 09:02:13
+                    :</strong> 2024-10-01 12:21:11
             </li>
         
         <li>
@@ -591,8 +659,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">移位运算</div>
-        
+        <div class="page-title">位运算</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B"><span class="nav-text">类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%98%E5%85%88%E7%BA%A7"><span class="nav-text">优先级</span></a></li></ol>
 
     </div>
 </div>
