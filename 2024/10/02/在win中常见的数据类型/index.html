@@ -13,23 +13,25 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2024/09/02/关于哈夫曼编码/"/>
+    <link rel="canonical" href="http://example.com/2024/10/02/在win中常见的数据类型/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="起因其实是几个月前的事，当时在看深入浅出程序设计竞赛，发现了有哈夫曼编码这个例子，并没怎么注意，但是神奇的是在之后又在youtube里看到了哈夫曼编码，于是就从网上收集了部分信息。 哈夫曼（Huffman）编码哈夫曼编码是一种非常有效的数据压缩算法，它通过使用可变长度的编码来达到无损压缩数据的目的。哈夫曼编码是依据字符出现概率来构建最优二叉树，从而生成最短的平均长度码字的编码方法。在实际应用中，哈">
+        <meta name="description" content="先谈如常一样打开一个win32api的文档 在这里，可见参数的数据类型，有的名称较为复杂，虽然之前有过接触，但是对于这种数据类型的名称，总是记不清，因此记下这篇blog 先讲讲为什么这些数据类型会这样命名 常见命名规则 匈牙利命名法 基本原则是：变量名&#x3D;属性+类型+对象描述。   　　匈牙利命名法关键是：标识符的名字以一个或者多个小写字母开头作为前缀；前缀之后的是首字母大写的一个单词或多">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于哈夫曼编码">
-<meta property="og:url" content="http://example.com/2024/09/02/%E5%85%B3%E4%BA%8E%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81/index.html">
+<meta property="og:title" content="在win中常见的数据类型">
+<meta property="og:url" content="http://example.com/2024/10/02/%E5%9C%A8win%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="a hexo blog">
-<meta property="og:description" content="起因其实是几个月前的事，当时在看深入浅出程序设计竞赛，发现了有哈夫曼编码这个例子，并没怎么注意，但是神奇的是在之后又在youtube里看到了哈夫曼编码，于是就从网上收集了部分信息。 哈夫曼（Huffman）编码哈夫曼编码是一种非常有效的数据压缩算法，它通过使用可变长度的编码来达到无损压缩数据的目的。哈夫曼编码是依据字符出现概率来构建最优二叉树，从而生成最短的平均长度码字的编码方法。在实际应用中，哈">
+<meta property="og:description" content="先谈如常一样打开一个win32api的文档 在这里，可见参数的数据类型，有的名称较为复杂，虽然之前有过接触，但是对于这种数据类型的名称，总是记不清，因此记下这篇blog 先讲讲为什么这些数据类型会这样命名 常见命名规则 匈牙利命名法 基本原则是：变量名&#x3D;属性+类型+对象描述。   　　匈牙利命名法关键是：标识符的名字以一个或者多个小写字母开头作为前缀；前缀之后的是首字母大写的一个单词或多">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-09-02T09:55:40.000Z">
-<meta property="article:modified_time" content="2024-09-07T13:37:23.545Z">
+<meta property="og:image" content="http://example.com/images/sc.png">
+<meta property="article:published_time" content="2024-10-02T07:38:50.000Z">
+<meta property="article:modified_time" content="2024-10-02T12:24:44.514Z">
 <meta property="article:author" content="knownothing">
-<meta property="article:tag" content="计算机编码">
+<meta property="article:tag" content="计算机杂谈">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/sc.png">
     
     
     <!--- Icon Part-->
@@ -41,7 +43,7 @@
     
     <title>
         
-            关于哈夫曼编码 -
+            在win中常见的数据类型 -
         
         🤓🤓摆烂blog🤓🤓
     </title>
@@ -405,7 +407,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">关于哈夫曼编码</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">在win中常见的数据类型</h1>
                 </div>
             
             </div>
@@ -426,15 +428,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-09-02 17:55:40</span>
-        <span class="mobile">2024-09-02 17:55:40</span>
+        <span class="desktop">2024-10-02 15:38:50</span>
+        <span class="mobile">2024-10-02 15:38:50</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-09-07 21:37:23</span>
-            <span class="mobile">2024-09-07 21:37:23</span>
+            <span class="desktop">2024-10-02 20:24:44</span>
+            <span class="mobile">2024-10-02 20:24:44</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -446,7 +448,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A0%81/">计算机编码</a>&nbsp;
+                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9D%82%E8%B0%88/">计算机杂谈</a>&nbsp;
                     </li>
                 
             </ul>
@@ -472,30 +474,165 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h6 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h6><p>其实是几个月前的事，当时在看深入浅出程序设计竞赛，发现了有哈夫曼编码这个例子，并没怎么注意，但是神奇的是在之后又在youtube里看到了哈夫曼编码，于是就从网上收集了部分信息。</p>
-<h1 id="哈夫曼（Huffman）编码"><a href="#哈夫曼（Huffman）编码" class="headerlink" title="哈夫曼（Huffman）编码"></a>哈夫曼（Huffman）编码</h1><p>哈夫曼编码是一种非常有效的数据压缩算法，它通过使用可变长度的编码来达到无损压缩数据的目的。哈夫曼编码是依据字符出现概率来构建最优二叉树，从而生成最短的平均长度码字的编码方法。在实际应用中，哈夫曼编码被广泛应用于数据压缩领域，尤其是在文件压缩、图像压缩和视频压缩等方面。</p>
-<p>定义：给定n个权值作为n个叶子结点，构造一棵二叉树，若树的带权路径长度达到最小，则这棵树被称为哈夫曼树。</p>
-<h2 id="哈夫曼编码的两个特殊性质："><a href="#哈夫曼编码的两个特殊性质：" class="headerlink" title="哈夫曼编码的两个特殊性质："></a>哈夫曼编码的两个特殊性质：</h2><p>1、哈夫曼编码是前缀编码。</p>
-<p>（问：什么是前缀编码？ 前缀编码就是在一个编码方案中，任何一个编码度不是其他任何编码的前缀（最左子串），那么这个编码就是前缀编码。可以保证在解码时不会产生二义性）</p>
-<p>2、哈夫曼编码是最优前缀编码。即对于包括n个字符的数据文件，分别以它们的出现次数为权值来构造哈夫曼树，则利用该树对应的哈夫曼编码对文件进行编码，能使该文件压缩后对应的二进制文件的长度最短。（同时，所以它也是不定长编码）</p>
-<h3 id="一、哈夫曼编码的原理"><a href="#一、哈夫曼编码的原理" class="headerlink" title="一、哈夫曼编码的原理"></a>一、哈夫曼编码的原理</h3><p>哈夫曼编码的基本原理是利用字符出现概率的不同，对字符进行不等长的编码，从而减少总体编码长度。具体来说，哈夫曼编码通过构建最优二叉树（也称为哈夫曼树）来实现这一目标。最优二叉树是一种带权路径长度最小的二叉树，其中权值表示字符出现的概率。在构建最优二叉树的过程中，出现概率较高的字符赋予较短的编码，出现概率较低的字符赋予较长的编码，从而达到平均长度最短的目的。</p>
-<h3 id="二、哈夫曼编码的算法实现"><a href="#二、哈夫曼编码的算法实现" class="headerlink" title="二、哈夫曼编码的算法实现"></a>二、哈夫曼编码的算法实现</h3><p>哈夫曼编码算法的实现包括以下几个步骤：</p>
-<h5 id="1-统计源数据中各个字符出现的概率。"><a href="#1-统计源数据中各个字符出现的概率。" class="headerlink" title="1 统计源数据中各个字符出现的概率。"></a>1 统计源数据中各个字符出现的概率。</h5><h5 id="2-根据字符概率构造哈夫曼树。这一步骤包括两个子步骤：首先是按照字符概率大小构造初始的二叉树，然后是进行合并操作，直到只剩下一个根节点。"><a href="#2-根据字符概率构造哈夫曼树。这一步骤包括两个子步骤：首先是按照字符概率大小构造初始的二叉树，然后是进行合并操作，直到只剩下一个根节点。" class="headerlink" title="2 根据字符概率构造哈夫曼树。这一步骤包括两个子步骤：首先是按照字符概率大小构造初始的二叉树，然后是进行合并操作，直到只剩下一个根节点。"></a>2 根据字符概率构造哈夫曼树。这一步骤包括两个子步骤：首先是按照字符概率大小构造初始的二叉树，然后是进行合并操作，直到只剩下一个根节点。</h5><h5 id="3-根据哈夫曼树生成编码表。这一步骤是将哈夫曼树的每个节点与其对应的字符进行关联，从而生成编码表。"><a href="#3-根据哈夫曼树生成编码表。这一步骤是将哈夫曼树的每个节点与其对应的字符进行关联，从而生成编码表。" class="headerlink" title="3 根据哈夫曼树生成编码表。这一步骤是将哈夫曼树的每个节点与其对应的字符进行关联，从而生成编码表。"></a>3 根据哈夫曼树生成编码表。这一步骤是将哈夫曼树的每个节点与其对应的字符进行关联，从而生成编码表。</h5><h5 id="4-对源数据进行哈夫曼编码。根据生成的编码表对源数据进行编码，得到哈夫曼编码后的数据。"><a href="#4-对源数据进行哈夫曼编码。根据生成的编码表对源数据进行编码，得到哈夫曼编码后的数据。" class="headerlink" title="4 对源数据进行哈夫曼编码。根据生成的编码表对源数据进行编码，得到哈夫曼编码后的数据。"></a>4 对源数据进行哈夫曼编码。根据生成的编码表对源数据进行编码，得到哈夫曼编码后的数据。</h5><h3 id="三、具体代码实现"><a href="#三、具体代码实现" class="headerlink" title="三、具体代码实现"></a>三、具体代码实现</h3><h5 id="先定义一"><a href="#先定义一" class="headerlink" title="先定义一"></a>先定义一</h5><h3 id="四、哈夫曼编码的应用与实践"><a href="#四、哈夫曼编码的应用与实践" class="headerlink" title="四、哈夫曼编码的应用与实践"></a>四、哈夫曼编码的应用与实践</h3><p>哈夫曼编码在实际应用中具有广泛的应用场景，例如文件压缩、图像压缩和视频压缩等。以下是几个具体的实践例子：<br>文件压缩：在文件压缩领域，哈夫曼编码被广泛应用于各种压缩软件中。通过对文件中的字符进行哈夫曼编码，可以显著减小文件体积，从而实现无损压缩。<br>图像压缩：在图像压缩领域，哈夫曼编码也被广泛应用。通过对图像中的像素信息进行哈夫曼编码，可以有效地减小图像文件大小，从而实现图像的无损压缩。<br>视频压缩：在视频压缩领域，哈夫曼编码同样发挥了重要作用。通过对视频中的音频和视频数据进行哈夫曼编码，可以显著减小视频文件大小，从而方便视频的存储和传输。</p>
-<h1 id="由网络信息整理而来"><a href="#由网络信息整理而来" class="headerlink" title="由网络信息整理而来"></a>由网络信息整理而来</h1>
+            <h3 id="先谈"><a href="#先谈" class="headerlink" title="先谈"></a>先谈</h3><p>如常一样打开一个win32api的文档</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/sc.png"
+                      alt="a"
+                ><br>在这里，可见参数的数据类型，有的名称较为复杂，虽然之前有过接触，但是对于这种数据类型的名称，总是记不清，因此记下这篇blog</p>
+<p>先讲讲为什么这些数据类型会这样命名</p>
+<h2 id="常见命名规则"><a href="#常见命名规则" class="headerlink" title="常见命名规则"></a>常见命名规则</h2><ol>
+<li><p>匈牙利命名法</p>
+<p>基本原则是：变量名&#x3D;属性+类型+对象描述。</p>
+</li>
+</ol>
+<p>　　匈牙利命名法关键是：标识符的名字以一个或者多个小写字母开头作为前缀；前缀之后的是首字母大写的一个单词或多个单词组合，该单词要指明变量的用途。</p>
+<p>　　匈牙利命名法通过在变量名前面加上相应的小写字母的符号标识作为前缀，标识出变量的作用域，类型等。这些符号可以多个同时使用，<em>顺序是先m_（成员变量），再指针，再简单数据类型，再其他</em>。</p>
+<pre><code>匈牙利命名法中常用的小写字母的前缀：
+
+    前　缀             类　　型
+    a                     数组 (Array)  
+    b                     布尔值 (Boolean)  
+    by                   字节 (Byte)  
+    c                     有符号字符 (Char)  
+    cb                   无符号字符 (Char Byte，没有多少人用)  
+    cr                    颜色参考值 (ColorRef)  
+    cx,cy               坐标差（长度 ShortInt）  
+    dw                   Double Word  
+    fn                    函数  
+    h                     Handle（句柄）  
+    i                      整型  
+    l                      长整型 (Long Int)  
+    lp                    Long Pointer  
+    m_                  类的成员  
+    n                     短整型 (Short Int)  
+    np                   Near Pointer  
+    p                     Pointer  
+    s                     字符串型  
+    sz                    以null做结尾的字符串型 (String with Zero End)  
+    w                     Word
+</code></pre>
+<p>   例如：</p>
+   <div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> iCount; <span class="comment">// 整数类型</span></span><br><span class="line"><span class="type">float</span> fValue; <span class="comment">// 浮点数类型</span></span><br><span class="line"><span class="type">char</span> chChar; <span class="comment">// 字符类型</span></span><br><span class="line"> </span><br></pre></td></tr></table></figure></div>
+<ol start="2">
+<li>小驼峰法（camel方法）变量一般用小驼峰法标识。</li>
+</ol>
+<p>　　第一个单词以小写字母开始；第二个单词的首字母大写或每一个单词的首字母都采用大写字母</p>
+<pre><code>例如：
+
+    myFirstName
+    myLastName
+</code></pre>
+<ol start="3">
+<li><p>大驼峰法（Pascal方法）常用于类名，函数名，属性，命名空间。</p>
+<p>相比小驼峰法，大驼峰法把第一个单词的首字母也大写了。</p>
+<p>例如：</p>
+<p> public class DataBaseUser</p>
+</li>
+<li><p>下划线命名法</p>
+</li>
+</ol>
+<p>下划线命名法并不如大小驼峰式命名法那么备受推崇，但是也是浓墨重彩的一笔。尤其在宏定义</p>
+<p>和常量中使用比较多，通过下划线来分割全部都是大写的单词。</p>
+<p>该命名规范，也是很简单，要求单词与单词之间通过下划线连接即可。</p>
+<p>例如：</p>
+<pre><code>    int my_age;
+    char my_name[10];
+    float man_height;
+</code></pre>
+<h4 id="下为例"><a href="#下为例" class="headerlink" title="下为例"></a>下为例</h4><p>虽然实际上的命名并不是完全按上面的规则来的，！但是！现实中的类型命名依旧可以靠上述原则来推断</p>
+<blockquote>
+<p>比如开篇图中的LPCSTR</p>
+</blockquote>
+<p>LPCTSTR的全写是 “Long Pointer to a Constant TCHAR String”。<br>其中各部分的含义如下：</p>
+<pre><code>“L”：表示这是一个长指针（long pointer），这是为了兼容 Windows 3.1 等 16 位操作系统遗留下来的，在 32 位及以上操作系统中，此 “长指针” 的概念主要是为了保持兼容性，实际意义不大。
+“P”：代表这是一个指针（pointer）。
+“C”：表示是一个常量（constant），即指向的字符串内容是不可修改的。
+“T”：在 Win32 环境中，TCHAR是一个根据是否定义了UNICODE宏而自动切换为char（ANSI 编码）或wchar_t（Unicode 编码）的类型。
+“STR”：表示这个变量是一个字符串（string）。
+</code></pre>
+<blockquote>
+<p>看看是不是符合匈牙利命名法的符号顺序</p>
+</blockquote>
+<p>匈牙利命名法的符号先后顺序通常为：</p>
+<pre><code>对象描述：描述变量所代表的实际意义，例如 “EmployeeName” 中的 “Employee” 和 “Name”。
+
+类型：用一个或几个字母表示变量的数据类型，例如 “iCount” 中的 “i” 表示整数类型（int），“strMessage” 中的 “str” 表示字符串类型等。
+
+属性：可选的部分，用于表示变量的一些特殊属性，如 “p” 表示指针，“c” 表示常量等。例如 “lpwszFileName” 中的 “lp” 表示长指针，“wsz” 表示宽字符字符串类型，“FileName” 是对象描述。
+</code></pre>
+<p>所以LPCTSTR表示一个指向常量 TCHAR 字符串的指针。在程序中，如果定义了UNICODE宏，LPCTSTR 就等同于 const wchar_t<em>；如果没有定义 UNICODE 宏，LPCTSTR 就等同于 const char</em>。</p>
+<h2 id="汇总"><a href="#汇总" class="headerlink" title="汇总"></a>汇总</h2><p>以下是一些 Win32&#x2F;C++ 中常用的数据类型：</p>
+<ol>
+<li><p>整型类型</p>
+<pre><code> byte：8 位无符号整数，范围是 0 到 255。
+ short：16 位有符号整数，范围是 -32,768 到 32,767。
+ word：16 位无符号整数，等同于 unsigned short，范围是 0 到 65,535。
+ dword：32 位无符号整数，范围是 0 到 4,294,967,295，等同于 unsigned long。
+ long：32 位有符号整数，范围是 -2,147,483,648 到 2,147,483,647。
+ longlong：64 位有符号整数，范围是 -9,223,372,036,854,775,808 到 9,223,372,036,854,775,807。
+ int_ptr：适用于指针或整数的有符号数据类型，其大小根据平台（32 位或 64 位）不同，常用于指针运算。
+ dword_ptr：适用于指针或整数的无符号数据类型，其大小根据平台（32 位或 64 位）不同
+</code></pre>
+</li>
+<li><p>字符类型</p>
+<pre><code> char：8 位字符，通常用于 ASCII 字符
+ wchar_t：16 位字符，通常用于 Unicode 字符
+ TCHAR：根据编译环境的设置（例如 _UNICODE 宏）可以是 char（ANSI 编码）或 wchar_t（Unicode 编码），用于编写可以在 ANSI 和 Unicode 模式下编译的代码
+</code></pre>
+</li>
+<li><p>字符串指针类型</p>
+<pre><code> LPSTR：char*，一个指向以 null 结尾的 ANSI 字符数组指针。
+ 
+ LPCSTR：const char*，一个指向以 null 结尾的常量 ANSI 字符串的指针。
+ 
+ LPWSTR：wchar_t*，一个指向以 null 结尾的 Unicode 字符数组指针。
+ 
+ LPCWSTR：const wchar_t*，一个指向以 null 结尾的常量 Unicode 字符串的指针。
+ 
+ LPTSTR：如果定义了 UNICODE 或者其他相关的宏，就相当于 LPWSTR；否则就相当于 LPSTR。
+ 
+ LPCTSTR：如果定义了 UNICODE 或者其他相关的宏，就相当于 LPCWSTR；否则就相当于 LPCSTR。
+
+ LPVOID的英文全称为 “Long Pointer to Void”，在 windef.h 头文件中定义为 typedef void far *LPVOID。在现代的 32 位或 64 位操作系统中，可以将其理解为一个指向 void（无类型）的指针。这意味着它可以指向任意类型的数据，但在使用时需要根据实际情况进行类型转换。
+</code></pre>
+</li>
+</ol>
+<blockquote>
+<p>“far” 关键字在早期的 Windows 编程中有特殊意义，用于表示远指针，与内存寻址相关，当时指针和长指针是有区别的。但在当前的平坦内存模型下，“far” 的实际意义已经不大。</p>
+</blockquote>
+<ol start="4">
+<li><p>布尔类型</p>
+<pre><code> bool：32 位布尔值，通常是 true 或 false。在 Windows API 中，bool 实际上是一个 32 位的整数类型，true 和 false 分别对应 1 和 0
+</code></pre>
+</li>
+<li><p>句柄类型</p>
+<pre><code> HANDLE：通用的句柄类型，用于表示对象的引用，如文件、窗口、进程等。具体类型通常需要强制转换为正确的类型（如 HWND（窗口句柄）、HINSTANCE（实例句柄）等）
+</code></pre>
+</li>
+<li><p>其他类型：</p>
+<pre><code> size_t：用于表示对象大小的类型，其大小根据平台（32 位或 64 位）不同
+ ssize_t：与 size_t 类似，但为有符号类型，用于表示可能为负的大小值。
+ COLORREF：unsigned long 类型，用于表示红、绿、蓝（RGB）值
+</code></pre>
+</li>
+</ol>
+
         </div>
 
         
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 关于哈夫曼编码</li>
+        <li><strong>标题:</strong> 在win中常见的数据类型</li>
         <li><strong>作者:</strong> jorker404joker</li>
         <li><strong>创建于
-                :</strong> 2024-09-02 17:55:40</li>
+                :</strong> 2024-10-02 15:38:50</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-09-07 21:37:23
+                    :</strong> 2024-10-02 20:24:44
             </li>
         
         <li>
@@ -518,7 +655,7 @@
             <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
                 
                     <li class="tag-item mx-0.5">
-                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A0%81/">#计算机编码</a>&nbsp;
+                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9D%82%E8%B0%88/">#计算机杂谈</a>&nbsp;
                     </li>
                 
             </ul>
@@ -529,21 +666,21 @@
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2024/09/03/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E7%AC%94%E8%AE%B0%EF%BC%88%E8%BD%AC%E8%BD%BD%EF%BC%89/"
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/10/01/%E4%BD%8D%E8%BF%90%E7%AE%97/"
                         >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">字符编码笔记（转载）</span>
-                                <span class="post-nav-item">上一篇</span>
+                                <span class="post-nav-title-item">位运算</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
                             </span>
                         </a>
                     </div>
-                
                 
             </div>
         
@@ -600,8 +737,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">关于哈夫曼编码</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%93%88%E5%A4%AB%E6%9B%BC%EF%BC%88Huffman%EF%BC%89%E7%BC%96%E7%A0%81"><span class="nav-text">哈夫曼（Huffman）编码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E7%9A%84%E4%B8%A4%E4%B8%AA%E7%89%B9%E6%AE%8A%E6%80%A7%E8%B4%A8%EF%BC%9A"><span class="nav-text">哈夫曼编码的两个特殊性质：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E7%9A%84%E5%8E%9F%E7%90%86"><span class="nav-text">一、哈夫曼编码的原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E7%9A%84%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0"><span class="nav-text">二、哈夫曼编码的算法实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%85%B7%E4%BD%93%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-text">三、具体代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5"><span class="nav-text">四、哈夫曼编码的应用与实践</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%B1%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E6%95%B4%E7%90%86%E8%80%8C%E6%9D%A5"><span class="nav-text">由网络信息整理而来</span></a></li></ol>
+        <div class="page-title">在win中常见的数据类型</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%88%E8%B0%88"><span class="nav-text">先谈</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99"><span class="nav-text">常见命名规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B1%87%E6%80%BB"><span class="nav-text">汇总</span></a>
 
     </div>
 </div>
