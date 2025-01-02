@@ -7625,6 +7625,7 @@ html.is-animating .scroll-progress-bar {
 .home-sidebar-container {
   width: 240px;
   height: auto;
+  background-color: #bbb;
   margin: 0 38px;
 }
 @media (max-width: 768px) {
@@ -7666,8 +7667,8 @@ html.is-animating .scroll-progress-bar {
   margin-top: 22.8px;
 }
 .home-sidebar-container .sidebar-content .avatar img {
-  width: 1px;
-  height: 1px;
+  width: 80px;
+  height: 80px;
   border-radius: 18px;
   box-shadow: var(--redefine-box-shadow-flat);
   border: 1px solid var(--border-color);
@@ -7678,7 +7679,7 @@ html.is-animating .scroll-progress-bar {
 }
 .home-sidebar-container .sidebar-content .author .name {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 3.2rem;
   font-weight: 600;
   color: var(--second-text-color);
 }
