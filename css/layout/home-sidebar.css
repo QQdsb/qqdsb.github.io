@@ -259,8 +259,8 @@
   margin-top: 22.8px;
 }
 .home-sidebar-container .sidebar-content .avatar img {
-  width: 100px;
-  height: 100px;
+  width: 1px;
+  height: 1px;
   border-radius: 18px;
   box-shadow: var(--redefine-box-shadow-flat);
   border: 1px solid var(--border-color);
